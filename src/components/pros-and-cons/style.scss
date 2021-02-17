@@ -1,0 +1,63 @@
+@import '../../assets/styles/variables/colors.scss';
+
+.pros-and-cons {
+    .title {
+        font-size: 20px;
+        text-align: center;
+        background-color: $brown;
+        color: $white;
+        padding: 30px 0;
+        width: 100%;
+    }
+    & > .content {
+        & > div {
+            width: 50%;
+            h2 {
+                width: 100%;
+                text-align: center;
+                padding: 30px 0;
+                border-bottom: 1px solid $brown;
+            }
+            .content {
+                min-height: 70vh;
+                padding: 20px;
+                .item {
+                    margin: 10px 0;
+                }
+                .delete-item {
+                    cursor: pointer;
+                    border-radius: 50%;
+                    border: 2px solid $brown;
+                    width: 25px;
+                    height: 25px;
+                    font-size: 18px;
+                    position: relative;
+                    top: -2px;
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+            &:first-child {
+                border-right: 1px solid $brown;
+            }
+        }
+        .item {
+            font-size: 17px;
+            .item-count {
+                font-weight: bold;
+            }
+            & > input {
+                width: 85%;
+                border-radius: 3px;
+                margin: 0 10px 1px 7px;
+                   
+                border: 0;
+                &:focus {
+                    box-shadow: 0 0 0 1px $blue;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

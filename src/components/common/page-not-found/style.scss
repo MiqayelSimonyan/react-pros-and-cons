@@ -1,0 +1,11 @@
+@import '../../../assets/styles/variables/colors.scss';
+
+.not_found_wrap {
+    text-align: center;
+    a {
+        color: $black;
+    }
+    & > div {
+        height: 100%;
+    }
+}
